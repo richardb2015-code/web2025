@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <style>
+        /* Your CSS styles for the dropdown menu go here */
+        /* Refer to the previous CSS example for guidance */
+/* Base styles for the dropdown menu */
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+/* First-level menu items */
+.nav-menu > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Second-level menu items */
+.nav-menu > li > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+.nav-menu > li:hover > ul {
+    display: block;
+}
+
+.nav-menu > li > ul > li > a {
+    padding: 8px 15px;
+    color: #555;
+}
+
+/* Third-level menu items */
+.nav-menu > li > ul > li > ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.nav-menu > li > ul > li:hover > ul {
+    display: block;
+}
+
+.nav-menu > li > ul > li > ul > li > a {
+    padding: 8px 15px;
+    color: #777;
+}
+/* Fourth-level menu items */
+.nav-menu > li > ul > li > ul > li > ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+}
+
+.nav-menu > li > ul > li > ul > li:hover > ul {
+    display: block;
+}
+
+.nav-menu > li > ul > li > ul > li > ul > li > a {
+    padding: 8px 15px;
+    color: #999;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li>
+                <a href="#">Products</a>
+                <ul>
+                    <li><a href="#">Category 1</a></li>
+                    <li>
+                        <a href="#">Category 2</a>
+                        <ul>
+                            <li><a href="#">Subcategory A</a></li>
+                            <li>
+                                <a href="#">Subcategory B</a>
+                                <ul>
+                                    <li><a href="#">Item 1</a></li>
+                                    <li><a href="#">Item 2</a></li>
+                                    <!-- Add more items as needed -->
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Other content of your webpage -->
+</body>
+</html>
